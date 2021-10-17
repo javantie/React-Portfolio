@@ -1,5 +1,4 @@
 import React from "react";
-import Portfolio from "../../pages/Portfolio";
 
 function Project() {
   return (
@@ -22,7 +21,7 @@ function Project() {
       >
         <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
         <div id="card-img">
-          <img class="rounded-lg" src="./assets/images/Capture.PNG" alt="" />
+          <img class="rounded-lg" src="./assets/images/Capture.PNG" alt="Project Image"/>
         </div>
         <div id="text-area" class="mb-2">
           <p class=" mt-2 font-thin text-lg p-3">
@@ -64,87 +63,7 @@ function Project() {
       >
         <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
         <div id="card-img">
-          <img class="rounded-lg" src="./assets/images/Capture2.PNG" alt="" />
-        </div>
-        <div id="text-area" class="mb-1">
-          <p class=" mt-2 font-thin text-lg p-3">
-            This site provides vital information to those who would like to invest in cryptocurrency. Updates in real-time, 
-            allowing users to find the latest rates for a variety of vrypto currencies. The site also provides a display of the bitcoin twitter feed.
-            Multiple APi's were use to retreive the data from other third party website such as Crypto-Compare.
-          </p>
-        </div>
-        <a href="https://github.com/Patrena94/stack-underflow" target="blank">
-          <button class="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
-            GitHub Repo
-          </button>
-        </a>
-        <br />
-        <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-        <span class="flex p-1 pb-4">
-          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
-          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
-          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
-        
-        </span>
-      </div>
-      <div
-        id="card"
-        class="
-          mx-4
-          px-4
-          md:w-6/12 md:h-5/6
-          w-auto
-          rounded-3xl
-          border-gray-300
-          shadow-xl
-          hover:shadow-2xl
-          border-2
-          mb-4
-        "
-      >
-        <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
-        <div id="card-img">
-          <img class="rounded-lg" src="./assets/images/Capture2.PNG" alt="" />
-        </div>
-        <div id="text-area" class="mb-1">
-          <p class=" mt-2 font-thin text-lg p-3">
-            This site provides vital information to those who would like to invest in cryptocurrency. Updates in real-time, 
-            allowing users to find the latest rates for a variety of vrypto currencies. The site also provides a display of the bitcoin twitter feed.
-            Multiple APi's were use to retreive the data from other third party website such as Crypto-Compare.
-          </p>
-        </div>
-        <a href="https://github.com/Patrena94/stack-underflow" target="blank">
-          <button class="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
-            GitHub Repo
-          </button>
-        </a>
-        <br />
-        <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-        <span class="flex p-1 pb-4">
-          <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
-          <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
-          <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
-        
-        </span>
-      </div>
-      <div
-        id="card"
-        class="
-          mx-4
-          px-4
-          md:w-6/12 md:h-5/6
-          w-auto
-          rounded-3xl
-          border-gray-300
-          shadow-xl
-          hover:shadow-2xl
-          border-2
-          mb-4
-        "
-      >
-        <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
-        <div id="card-img">
-          <img class="rounded-lg" src="./assets/images/Capture2.PNG" alt="" />
+          <img class="rounded-lg" src="../assets/images/Capture2.PNG" alt="Project Image" />
         </div>
         <div id="text-area" class="mb-1">
           <p class=" mt-2 font-thin text-lg p-3">

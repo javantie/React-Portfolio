@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Resume from "./components/Resume";
 import Portfolio from "./pages/Portfolio";
+import ContactForm from "./pages/Contact";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/project" component={Portfolio} />
+            <Route exact path="/contact" component={ContactForm} />
           </Switch>
         </div>
         <Footer />

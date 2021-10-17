@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function About (){
 
     return(
@@ -24,8 +25,8 @@ function About (){
           <div class="h-auto w-56 py-4 sm:ml-0">
             <img
               class="rounded-2xl w-56 h-56"
-              src="./assets/images/my-pic"
-              alt=""
+              src="../assets/images/my-pic"
+              alt="Akeem-picture"
             />
           </div>
           <div class="sm:w-5/6 sm:pl-4">

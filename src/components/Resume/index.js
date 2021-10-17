@@ -3,7 +3,7 @@ import React from "react";
 function Resume() {
   return (
     <>
-    <div id="hero" class="h-44 flex items-center justify-center">
+    <div id="hero" class="my-4 flex items-center animate-pulse justify-center">
       <a href="./assets/files/resume.pdf" download="resume.pdf"><button
         class="
           bg-blue-400
