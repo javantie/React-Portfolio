@@ -21,7 +21,7 @@ function Project() {
       >
         <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
         <div id="card-img">
-          <img class="rounded-lg" src="./assets/images/Capture.PNG" alt="Project Image"/>
+  <img class="rounded-lg" src="../assets/images/Capture3.PNG" alt="Project Image"/>
         </div>
         <div id="text-area" class="mb-2">
           <p class=" mt-2 font-thin text-lg p-3">

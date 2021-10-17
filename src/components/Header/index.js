@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <header className=" pt-2 bg-gray-400">
-        <h2 className="w-auto  p-3 font-bold text-2xl text-blue-900">
+      <header className="bg-gray-400">
+        <div className="flex justify-between">
+        <h2 className="w-4/6 mr-4 font-bold text-2xl text-blue-900 animate-bounce  pt-4 ">
           “First, solve the problem. Then, write the code.” – John Johnson
         </h2>
-        <div className=" mt-3 flex items-center justify-center animate-bounce">
+        <div className=" my-2 flex items-center justify-center animate-pulse w-1/6">
           <Link to='/project'>
             <button
               class="
-          bg-blue-400
+          bg-blue-700
           p-2
           rounded-lg
           text-white
@@ -24,6 +25,7 @@ function Header() {
               View Projects
             </button>
           </Link>
+        </div>
         </div>
         <Nav />
       </header>
