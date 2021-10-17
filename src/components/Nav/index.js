@@ -1,15 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav>
-      <ul className="flex-row">
-        <li className="mx-2">About Me</li>
-        <li className="mx-2">Contact Me</li>
-        <li className="mx-2">Resume</li>
-        <li className="mx-2">Projects</li>
-      </ul>
-    </nav>
+    <div
+      class="
+      flex
+      items-center
+      justify-center
+      sticky
+      top-0
+      border-t-2 border-b-2
+      bg-gray-700
+    "
+    >
+      <nav class="text-white text-xl font-semibold p-1 no-underline">
+        <Link to="/project"> Project </Link>|<Link to="/about"> About </Link>|
+        <Link to="/resume"> Resume </Link>|
+        <Link to="/contact"> Contact Me </Link>|
+      </nav>
+    </div>
   );
 }
 
