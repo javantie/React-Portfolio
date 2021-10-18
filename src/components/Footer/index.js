@@ -2,8 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer >
-      <ul className="pr-6 font-semibold pt-4 sm:w-2/5 text-2xl flex ">
+    <footer className="pb-2">
+      <hr/>
+      <ul className="pr-6 font-semibold pt-2 sm:w-2/5 text-2xl flex ">
         <li className="pl-4 pt-4">
           <a href="tel:+13473044422">📞 Call Me</a>
         </li>
