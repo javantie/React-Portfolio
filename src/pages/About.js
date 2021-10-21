@@ -1,4 +1,5 @@
 import React from 'react'
+import profilepic from "../assets/images/my-pic"
 
 
 function About (){
@@ -25,7 +26,7 @@ function About (){
           <div class="h-auto w-56 py-4 sm:ml-0">
             <img
               class="rounded-2xl w-56 h-56"
-              src="../assets/images/my-pic"
+              src={profilepic}
               alt="Akeem-picture"
             />
           </div>

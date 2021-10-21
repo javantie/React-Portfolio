@@ -1,4 +1,8 @@
 import React from "react";
+import stack from "../../assets/images/stack.png"
+import coinNerd from "../../assets/images/Capture2.PNG"
+import bookspic from "../../assets/images/screenshot.png"
+import notepic from "../../assets/images/Capture4.PNG"
 
 function Project() {
   return (
@@ -26,7 +30,7 @@ function Project() {
           <div id="card-img">
             <img
               class="rounded-lg"
-              src="../assets/images/stack.PNG"
+              src={stack}
               alt="Project Image"
             />
           </div>
@@ -78,7 +82,7 @@ function Project() {
         >
           <h2 class="mb-2 font-bold text-center pt-2">Coin Nerd</h2>
           <div id="card-img">
-            <img class="rounded-lg" src="./assets/images/Capture2.PNG" alt="" />
+            <img class="rounded-lg" src={coinNerd} alt="" />
           </div>
           <div id="text-area" class="mb-1">
             <p class=" mt-2 font-thin text-lg p-3">
@@ -129,7 +133,7 @@ function Project() {
           <div id="card-img">
             <img
               class="rounded-lg"
-              src="./assets/images/screenshot.PNG"
+              src={bookspic}
               alt=""
             />
           </div>
@@ -182,7 +186,7 @@ function Project() {
         >
           <h2 class="mb-2 font-bold text-center pt-2">Note Taker App</h2>
           <div id="card-img">
-            <img class="rounded-lg" src="./assets/images/Capture4.PNG" alt="" />
+            <img class="rounded-lg" src={notepic} alt="" />
           </div>
           <div id="text-area" class="mb-2">
             <p class="mt-2 p-3 font-thin text-lg">
