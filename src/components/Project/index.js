@@ -3,6 +3,7 @@ import stack from "../../assets/images/stack.png"
 import coinNerd from "../../assets/images/Capture2.PNG"
 import bookspic from "../../assets/images/screenshot.png"
 import notepic from "../../assets/images/Capture4.PNG"
+import salonxp from "../../assets/images/salonxp.PNG"
 
 function Project() {
   return (
@@ -169,6 +170,7 @@ function Project() {
             <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
           </span>
         </div>
+       
         <div
           id="card"
           class="
@@ -184,36 +186,40 @@ function Project() {
         mb-4
         "
         >
-          <h2 class="mb-2 font-bold text-center pt-2">Note Taker App</h2>
+          <h2 class="mb-2 font-bold text-center pt-2">Salon-Xperience</h2>
           <div id="card-img">
-            <img class="rounded-lg" src={notepic} alt="" />
+            <img class="rounded-lg" src={salonxp} alt="" />
           </div>
           <div id="text-area" class="mb-2">
             <p class="mt-2 p-3 font-thin text-lg">
-              This is an express application which uses heroku as a deploying
-              platform. It will take user's input and save it on the server side
-              as json format. User can create and delete the notes.
+            Salon-Xperience is a Single Page Web Application which supports 3 different types of users: Client, 
+            Stylist & Admin. Users can create a profile, book/view their appointments, purchase services for a future date and manage their hair experience. 
+            The application was built using the MERN stack and performs CRUD operations supported by GRAPHQL.
             </p>
           </div>
           <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded">
             <a
-              href="https://github.com/javantie/Note-Taker-App"
+              href="https://github.com/nylesor28/salon-xperience"
               target="_blank"
             >
               GitHub Repo
             </a>
           </button>
           <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
-            <a href="https://javantienotetaker.herokuapp.com/" target="_blank">
+            <a href="https://salon-xperience.herokuapp.com/login" target="_blank">
               View Live App
             </a>
           </button>
           <br />
           <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
           <span class="flex p-1 pb-4">
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">CSS</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
+            <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWIND.CSS</p>
+            <p class="mr-2 bg-red-900 text-white p-1 rounded">MONGOOSE</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
+            <p class="mr-2 bg-red-900 text-white p-1 rounded">GRAPHQL</p>
+            <p class="mr-2 bg-red-900 text-white p-1 rounded">REACT</p>
+            <p class="mr-2 bg-red-900 text-white p-1 rounded">NODE</p>
+            <p class="mr-2 bg-red-900 text-white p-1 rounded">EXPRESS</p>
           </span>
         </div>
       </section>
