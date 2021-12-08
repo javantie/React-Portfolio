@@ -5,8 +5,8 @@ function Portfolio() {
   return (
     <>
       <div class="text-center text-xl mt-10">
-        <h1 class="font-bold text-3xl text-red-800 font-serif underline">FEATURED PROJECTS</h1>
-        <p class="pt-2 pb-6 px-2 font-thin text-2xl">
+        <h1 class="font-bold sm:text-3xl text-red-800 font-serif underline">FEATURED PROJECTS</h1>
+        <p class="pt-2 pb-6 px-2 font-thin sm:text-2xl">
           See my works below. Unless explicitly stated otherwise, all their
           back-end and front-end parts were completely done by me.
         </p>

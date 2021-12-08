@@ -14,18 +14,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Header /> */}
         <Nav />
         <Hero />
-        <About/>
-        <Portfolio/>
         <div>
-          {/* <Switch>
+          <Switch>
             <Route exact path="/" component={About} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/project" component={Portfolio} />
             <Route exact path="/contact" component={ContactForm} />
-          </Switch> */}
+          </Switch>
         </div>
         <Footer />
       </div>

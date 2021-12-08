@@ -58,7 +58,7 @@ function Project() {
           </button>
           <br />
           <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4">
+          <span class="flex p-1 pb-4 flex-wrap">
             <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
@@ -109,7 +109,7 @@ function Project() {
 
           <br />
           <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4">
+          <span class="flex p-1 pb-4 flex-wrap">
             <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
@@ -164,7 +164,7 @@ function Project() {
           </button>
           <br />
           <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4">
+          <span class="flex p-1 pb-4 flex-wrap">
             <p class="mr-2 bg-red-900 text-white p-1 rounded">CSS</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
@@ -212,7 +212,7 @@ function Project() {
           </button>
           <br />
           <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4">
+          <span class="flex p-1 pb-4 flex-wrap">
             <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWIND.CSS</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">MONGOOSE</p>
             <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
