@@ -64,11 +64,11 @@ const projects = [
 function Project() {
   return (
     <>
-      <div id="my-work" class="md:flex md:flex-row md:justify-evenly flex-wrap">
+      <div id="my-work" className="md:flex md:flex-row md:justify-evenly flex-wrap">
         {projects.map((project) => (
           <div
             id="card"
-            class="
+            className="
           mx-4
           px-4
           md:w-5/12 md:auto
@@ -79,30 +79,30 @@ function Project() {
         "
             key={project.title}
           >
-            <h2 class="mb-2 font-bold text-center pt-2 text-lg">
+            <h2 className="mb-2 font-bold text-center pt-2 text-lg">
               {project.title}
             </h2>
             <div id="card-img">
-              <img class="rounded-lg" src={project.image} alt="Project-1" />
+              <img className="rounded-lg" src={project.image} alt="Project-1" />
             </div>
-            <div id="text-area" class="mb-2">
-              <p class=" mt-2 font-thin text-lg p-3">{project.description}</p>
+            <div id="text-area" className="mb-2">
+              <p className=" mt-2 font-thin text-lg p-3">{project.description}</p>
             </div>
             <a href={project.repolink} target="blank">
-              <button class="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
+              <button className="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
                 GitHub Repo
               </button>
             </a>
-            <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
+            <button className="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
               <a href={project.applink} target="_blank">
                 View Live App
               </a>
             </button>
             <br />
-            <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-            <div class="flex p-1 pb-4 flex-wrap">
+            <span className="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
+            <div className="flex p-1 pb-4 flex-wrap">
               {project.languages.map((language) => (
-                <p class="mr-2 bg-red-900 text-white p-1 rounded mt-1">
+                <p key={language} className="mr-2 bg-red-900 text-white p-1 rounded mt-1">
                   {language}
                 </p>
               ))}

@@ -10,9 +10,8 @@ function Resume() {
             <h3 className="font-semibold">Medgar Ever College</h3>
             <p>Business Administration (A.S)</p>
             <p>Accounting (B.S)</p>
-            <h4 className="font-semibold pt-4">Certification:</h4>
-            <p>CompTIA A+, Security+, Network+ Certified</p>
-            <p>Full Stack Web Developer - UCONN</p>
+            <h3 className="font-semibold pt-4">Certification:</h3>
+            <p>Full Stack Web Developer - UCONN-School Of Engineering</p>
           </div>
           <div className="sm:w-2/6 pt-4">
             <div className="font-bold text-2xl">Lauguages Skills:</div>
