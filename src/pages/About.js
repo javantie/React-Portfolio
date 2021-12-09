@@ -42,7 +42,8 @@ function About() {
 
           <div className="mt-4">
             <a
-              href="https://entrepreneurlifestylz.com/"
+              href="https://entrepreneurlifestylz.com/" 
+              target="_blank"
               className="text-red-800 text-lg"
             >
               Visit My Blog <i className="fas fa-share"></i>

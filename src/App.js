@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Resume from "./components/Resume";
@@ -9,8 +8,8 @@ import ContactForm from "./pages/Contact";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 
-
 function App() {
+ 
   return (
     <Router>
       <div className="App">

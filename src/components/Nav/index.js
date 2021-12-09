@@ -71,11 +71,11 @@ function Nav() {
             </button>
           </div>
         </div>
-        <div className=" mobile-menu bg-red-700 pl-5 py-2 ">
+        <div className="hidden mobile-menu bg-red-700 pl-5 py-2 ">
           <ul className="font-bold text-white">
             <li>
               <Link
-                to="/"
+                to="project"
                 className="hover:bg-blue-400 transition duration-300  p-1 rounded"
               >
                 PROJECTS

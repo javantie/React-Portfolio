@@ -1,228 +1,115 @@
 import React from "react";
-import stack from "../../assets/images/stack.png"
-import coinNerd from "../../assets/images/Capture2.PNG"
-import bookspic from "../../assets/images/screenshot.png"
-import notepic from "../../assets/images/Capture4.PNG"
-import salonxp from "../../assets/images/salonxp.PNG"
+import stack from "../../assets/images/stack.png";
+import coinNerd from "../../assets/images/Capture2.PNG";
+import bookspic from "../../assets/images/screenshot.png";
+import salonxp from "../../assets/images/salonxp.PNG";
+
+const projects = [
+  {
+    title: "Stack_Underflo",
+    image: stack,
+    description:
+      "The Stack-Underflow app is a diversified resource center where fledgling coders go to expand their knowledge to the next level. It provides coders with resources to ignite their light about a subject matter. The application provides references to websites, books, coding puzzles, and answer to questions submitted. This was a group project and I was mainly resposible for the front-end of the application.",
+    applink: "https://stack-underflo.herokuapp.com/",
+    repolink: "https://github.com/javantie/stack-underflow",
+    languages: ["HTML5", "CSS", "JavaScript", "Node.js", "TailwindCSS"],
+  },
+  {
+    title: "Coin Nerd",
+    image: coinNerd,
+    description:
+      "This site provides vital information to those who would like to invest in cryptocurrency Updates in real-time, allowing users to find the latest rates for a variety of crypto currencies The site also provides a display of the bitcoin twitter feed Multiple APis were use to retreive the data from other third party website such as Crypto-Compare ",
+    applink: "https://javantie.github.io/Coin-Nerds/",
+    repolink: "https://github.com/javantie/Coin-Nerds",
+    languages: ["TAILWINDCSS", "JavaScript", "Node.js", "Rest API", "HTML5"],
+  },
+  {
+    title: "Book Search Engine",
+    image: bookspic,
+    description:
+      "This is a book search engine application that allows users to search for their favorate books using a Google Books API. Users are also able to save their seached book for later use. This app is Full-Stack MERN application that uses MongoDB, Express, React, and Node.js. ",
+    applink: "https://radiant-meadow-67856.herokuapp.com/",
+    repolink: "https://github.com/javantie/Book-Search-Engine",
+    languages: [
+      "HTML5",
+      "JavaScript",
+      "Node.js",
+      "TailwindCSS",
+      "MongoDB",
+      "Express",
+      "React",
+      "GraphQL",
+    ],
+  },
+  {
+    title: "Salon-Xperience",
+    image: salonxp,
+    description:
+      "The Stack-Underflow app is a diversified resource center where fledgling coders go to expand their knowledge to the next level. It provides coders with resources to ignite their light about a subject matter. The application provides references to websites, books, coding puzzles, and answer to questions submitted. This was a group project and I was mainly resposible for the front-end of the application.",
+    applink: "https://salon-xperience.herokuapp.com/login",
+    repolink: "https://github.com/nylesor28/salon-xperience",
+    languages: [
+      "HTML5",
+      "JavaScript",
+      "Node.js",
+      "TailwindCSS",
+      "MongoDB",
+      "Express",
+      "React",
+      "GraphQL",
+    ],
+  },
+];
 
 function Project() {
   return (
     <>
-      <section
-        id="my-work"
-        class="md:flex md:flex-row md:justify-evenly flex-wrap"
-      >
-        <div
-          id="card"
-          class="
+      <div id="my-work" class="md:flex md:flex-row md:justify-evenly flex-wrap">
+        {projects.map((project) => (
+          <div
+            id="card"
+            class="
           mx-4
           px-4
           md:w-5/12 md:auto
           w-auto
-          rounded-3xl
-          border-gray-300
+          rounded-md
           shadow-xl
-          hover:shadow-2xl
-          border-2
           mb-4
         "
-        >
-          <h2 class="mb-2 font-bold text-center pt-2">Stack_Underflo</h2>
-          <div id="card-img">
-            <img
-              class="rounded-lg"
-              src={stack}
-              alt="Project Image"
-            />
-          </div>
-          <div id="text-area" class="mb-2">
-            <p class=" mt-2 font-thin text-lg p-3">
-              The Stack-Underflow app is a diversified resource center where
-              fledgling coders go to expand their knowledge to the next level.
-              It provides coders with resources to ignite their light about a
-              subject matter. The application provides references to websites,
-              books, coding puzzles, and answer to questions submitted. This was
-              a group project and I was mainly resposible for the front-end of
-              the application.
-            </p>
-          </div>
-          <a href="https://github.com/Patrena94/stack-underflow" target="blank">
-            <button class="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
-              GitHub Repo
+            key={project.title}
+          >
+            <h2 class="mb-2 font-bold text-center pt-2 text-lg">
+              {project.title}
+            </h2>
+            <div id="card-img">
+              <img class="rounded-lg" src={project.image} alt="Project-1" />
+            </div>
+            <div id="text-area" class="mb-2">
+              <p class=" mt-2 font-thin text-lg p-3">{project.description}</p>
+            </div>
+            <a href={project.repolink} target="blank">
+              <button class="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
+                GitHub Repo
+              </button>
+            </a>
+            <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
+              <a href={project.applink} target="_blank">
+                View Live App
+              </a>
             </button>
-          </a>
-          <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
-            <a href=" https://stack-underflo.herokuapp.com/" target="_blank">
-              View Live App
-            </a>
-          </button>
-          <br />
-          <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4 flex-wrap">
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">NODE.JS</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">HANDLEBARS</p>
-          </span>
-        </div>
-        <div
-          id="card"
-          class="
-          mx-4
-          px-4
-          md:w-5/12 md:auto
-          w-auto
-          rounded-3xl
-          border-gray-300
-          shadow-xl
-          hover:shadow-2xl
-          border-2
-          mb-4
-        "
-        >
-          <h2 class="mb-2 font-bold text-center pt-2">Coin Nerd</h2>
-          <div id="card-img">
-            <img class="rounded-lg" src={coinNerd} alt="" />
+            <br />
+            <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
+            <div class="flex p-1 pb-4 flex-wrap">
+              {project.languages.map((language) => (
+                <p class="mr-2 bg-red-900 text-white p-1 rounded mt-1">
+                  {language}
+                </p>
+              ))}
+            </div>
           </div>
-          <div id="text-area" class="mb-1">
-            <p class=" mt-2 font-thin text-lg p-3">
-              This site provides vital information to those who would like to
-              invest in cryptocurrency. Updates in real-time, allowing users to
-              find the latest rates for a variety of vrypto currencies. The site
-              also provides a display of the bitcoin twitter feed. Multiple
-              APi's were use to retreive the data from other third party website
-              such as Crypto-Compare.
-            </p>
-          </div>
-          <button class="bg-red-900 font-bold hover:bg-red-400 text-xl text-white p-1 mb-2 rounded">
-            <a href="https://github.com/javantie/Coin-Nerds" target="blank">
-              GitHub Repo
-            </a>
-          </button>
-
-          <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
-            <a href="https://javantie.github.io/Coin-Nerds//" target="_blank">
-              View Live App
-            </a>
-          </button>
-
-          <br />
-          <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4 flex-wrap">
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWINDCSS</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
-          </span>
-        </div>
-        <div
-          id="card"
-          class="
-        mx-4
-        px-4
-        md:w-5/12 md:auto
-        w-auto
-        rounded-3xl
-        border-gray-300
-        shadow-xl
-        hover:shadow-2xl
-        border-2
-        mb-4
-        "
-        >
-          <h2 class="mb-2 font-bold text-center pt-2">Book Search Engine</h2>
-          <div id="card-img">
-            <img
-              class="rounded-lg"
-              src={bookspic}
-              alt=""
-            />
-          </div>
-          <div id="text-area" class="mb-2">
-            <p class="mt-2 p-3 font-thin text-lg">
-              This is a book search engine application that allows users to
-              search for their favorate books using a Google Books API. This app
-              is Full-Stack MERN application that allows users to keep track of
-              all books saved.
-            </p>
-          </div>
-          <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded">
-            <a
-              href="https://github.com/javantie/Book-Search-Engine"
-              target="_blank"
-            >
-              GitHub Repo
-            </a>
-          </button>
-          <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
-            <a
-              href="https://radiant-meadow-67856.herokuapp.com/"
-              target="_blank"
-            >
-              View Live App
-            </a>
-          </button>
-          <br />
-          <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4 flex-wrap">
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">CSS</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">HTML5</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
-          </span>
-        </div>
-       
-        <div
-          id="card"
-          class="
-        mx-4
-        px-4
-        md:w-5/12 md:auto
-        w-auto
-        rounded-3xl
-        border-gray-300
-        shadow-xl
-        hover:shadow-2xl
-        border-2
-        mb-4
-        "
-        >
-          <h2 class="mb-2 font-bold text-center pt-2">Salon-Xperience</h2>
-          <div id="card-img">
-            <img class="rounded-lg" src={salonxp} alt="" />
-          </div>
-          <div id="text-area" class="mb-2">
-            <p class="mt-2 p-3 font-thin text-lg">
-            Salon-Xperience is a Single Page Web Application which supports 3 different types of users: Client, 
-            Stylist & Admin. Users can create a profile, book/view their appointments, purchase services for a future date and manage their hair experience. 
-            The application was built using the MERN stack and performs CRUD operations supported by GRAPHQL.
-            </p>
-          </div>
-          <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded">
-            <a
-              href="https://github.com/nylesor28/salon-xperience"
-              target="_blank"
-            >
-              GitHub Repo
-            </a>
-          </button>
-          <button class="bg-red-900 text-white p-1 mb-2 text-lg font-bold rounded ml-2">
-            <a href="https://salon-xperience.herokuapp.com/login" target="_blank">
-              View Live App
-            </a>
-          </button>
-          <br />
-          <span class="font-semibold">TECHNOLOGIES & LIBRARIES:</span>
-          <span class="flex p-1 pb-4 flex-wrap">
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">TAILWIND.CSS</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">MONGOOSE</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">JAVA SCRIPT</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">GRAPHQL</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">REACT</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">NODE</p>
-            <p class="mr-2 bg-red-900 text-white p-1 rounded">EXPRESS</p>
-          </span>
-        </div>
-      </section>
+        ))}
+      </div>
     </>
   );
 }
